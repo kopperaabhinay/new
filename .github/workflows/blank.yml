@@ -28,5 +28,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Printing secrets
         run: |
-          export new_secret=${{ NEW_SECRET }}
+          export new_secret=${{ secrets.NEW_SECRET }}
           echo new_secret
